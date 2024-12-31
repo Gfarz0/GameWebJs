@@ -1,0 +1,193 @@
+/* Global Reset */
+/* Mengatur padding dan margin menjadi nol untuk semua elemen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', sans-serif; /* Font tema arcade */
+}
+
+/* Body Styling */
+/* Mengatur latar belakang dengan gambar dan gaya responsif */
+body {
+  background-image: url('gambar/Last Land.gif'); /* Gambar latar belakang */
+  background-size: cover; /* Membuat gambar memenuhi layar */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Latar tetap saat di-scroll */
+  background-position: center; /* Memusatkan gambar */
+  color: #ffffff; /* Warna teks default */
+  overflow-x: hidden; /* Mencegah scroll horizontal */
+  height: 100vh; /* Tinggi penuh viewport */
+}
+
+/* Header Styling */
+.header {
+  background: rgba(114, 114, 114, 0.8); /* Latar belakang gelap dengan transparansi */
+  color: #00ffcc; /* Warna teks neon */
+  text-align: center;
+  padding: 2rem;
+  text-shadow: 0 0 10px #697774, 0 0 20px #00ffcc; /* Efek cahaya pada teks */
+}
+
+header h1 {
+  font-size: 3rem; /* Ukuran teks besar */
+  letter-spacing: 2px; /* Spasi antar huruf */
+}
+
+/* Navigation Styling */
+/* Menu navigasi dengan gaya neon */
+nav {
+  display: flex; /* Membuat menu horizontal */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(115, 111, 111, 0.7); /* Latar belakang transparan */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan halus */
+}
+
+nav img{
+  width: 50px;
+  
+}
+nav ul {
+  display: flex; /* Daftar navigasi horizontal */
+  list-style: none; /* Menghapus bullet */
+  gap: 1.5rem; /* Jarak antar item */
+}
+
+nav ul li a {
+  color: #00ffcc; /* Warna teks neon */
+  text-decoration: none; /* Menghapus garis bawah */
+  transition: color 0.3s, text-shadow 0.3s; /* Efek hover */
+}
+
+nav ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #00ffcc; /* Efek neon saat hover */
+}
+
+/* Section Head Styling */
+.section.head {
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)); /* Gradien gelap */
+  color: #ff0066; /* Warna teks neon merah muda */
+  text-align: center; /* Pusatkan teks */
+  padding: 20px; /* Padding untuk memberi ruang */
+  font-size: 2rem; /* Ukuran font besar */
+  letter-spacing: 1.5px; /* Jarak antar huruf */
+  text-shadow: 0 0 10px #ff0066, 0 0 20px #ff66ff; /* Efek neon pada teks */
+  border-radius: 10px; /* Sudut membulat */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6), 0 0 20px #ff0066; /* Bayangan dengan efek neon */
+  margin: 20px auto; /* Jarak dari elemen lain dan center */
+  width: fit-content; /* Ukuran sesuai dengan konten */
+}
+
+
+/* Section Styling */
+.section-title {
+  font-size: 2rem; /* Ukuran judul */
+  color: #ff0066; /* Warna neon merah muda */
+  text-shadow: 0 0 5px #702643, 0 0 10px #cd75cd; /* Efek cahaya */
+  margin: 20px 0;
+  text-align: center;
+}
+
+p {
+  color: #ffffff; /* Warna teks putih */
+  line-height: 1.6; /* Spasi antar baris */
+  text-align: center;
+  padding: 0 2rem; /* Ruang kiri dan kanan */
+}
+
+/* Game Cards */
+/* Kotak game dengan gaya retro */
+.game {
+  background-color: #1a2a3a; /* Latar belakang kotak */
+  margin: 15px; /* Jarak antar game */
+  padding: 15px;
+  border: 3px solid #7D8082; /* Border abu-abu */
+  border-radius: 8px; /* Sudut membulat */
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek hover */
+}
+
+/* Game Container Styling */
+#games {
+  display: flex; /* Mengatur tata letak menjadi Flexbox */
+  flex-wrap: wrap; /* Membungkus elemen jika tidak muat dalam satu baris */
+  justify-content: center; /* Memusatkan elemen secara horizontal */
+  gap: 20px; /* Memberi jarak antar elemen */
+  padding: 20px; /* Memberi ruang di sekitar container */
+}
+
+
+.game:hover {
+  transform: scale(1.1); /* Memperbesar kotak saat hover */
+  box-shadow: 0px 0px 15px 5px #ff4655; /* Bayangan neon */
+}
+
+.game img {
+  width: 100%; /* Gambar memenuhi kotak */
+  border-radius: 8px; /* Sudut membulat */
+  margin-bottom: 10px; /* Jarak bawah */
+  border: 2px solid #7D8082; /* Bingkai gambar */
+  transition: transform 0.3s, box-shadow 0.3s; /* Efek hover */
+}
+
+.game img:hover {
+  transform: scale(1.1); /* Memperbesar gambar */
+  box-shadow: 0 0 20px #00ffcc; /* Efek neon */
+}
+
+.game h2 {
+  font-size: 16px; /* Ukuran teks judul */
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+/* Button Styling */
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #00ffcc, #ff0066); /* Gradien warna neon */
+  color: #fff;
+  border-radius: 5px; /* Sudut membulat */
+  text-transform: uppercase;
+  font-size: 0.9rem; /* Ukuran teks kecil */
+  text-decoration: none;
+  transition: background 0.3s, box-shadow 0.3s; /* Efek hover */
+}
+
+.button:hover {
+  background: linear-gradient(145deg, #ff0066, #00ffcc); /* Gradien terbalik */
+  box-shadow: 0 0 10px #fff, 0 0 20px #00ffcc; /* Efek neon */
+}
+
+/* Footer Styling */
+.footer {
+  background: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  text-shadow: 0 0 5px #fff, 0 0 10px #00ffcc;
+}
+
+.footer p {
+  font-size: 0.8rem;
+}
+
+/* File: styles.css */
+a[href^="mailto:"] {
+  color: #ffffff; /* Warna biru */
+  text-decoration: none; /* Menghapus garis bawah */
+}
+
+a[href^="mailto:"]:hover {
+  color: #0011ff; /* Warna hijau saat hover */
+  text-decoration: underline; /* Tambahkan garis bawah saat hover */
+}
+
+.emoji {
+  font-size: 50px;
+}
